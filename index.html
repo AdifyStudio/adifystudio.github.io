@@ -8,13 +8,11 @@
   body, html {
     height: 100%;
     margin: 0;
-    background-image: url('https://www.adifystudio.com/backraound.jpg'); /* Arka plan resmi */
-    background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
-    background-size: contain; /* Arka plan resmini tamamen görünür hale getirme */
-    background-position: center; /* Arka plan resmini sayfanın ortasına hizalama */
+    background-color: #000; /* Başlangıçta siyah arkaplan */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Animasyon sırasında taşmayı önle */
   }
 
   .neon-text {
@@ -25,7 +23,7 @@
   }
 
   .neon-letter {
-    animation: neon-animation 2s infinite alternate;
+    animation: neon-animation 5s linear forwards; /* 5 saniyede sarıya dön */
     margin-right: 0.2em; /* Harfler arasındaki boşluğu ayarla */
   }
 
@@ -74,7 +72,7 @@
   }
 
   @keyframes neon-animation {
-    0%, 100% {
+    0% {
       color: #0000FF; /* Mavi */
     }
     20% {
@@ -88,6 +86,9 @@
     }
     80% {
       color: #FF00FF; /* Eflatun */
+    }
+    100% {
+      color: #FFFF00; /* Sarı */
     }
   }
 </style>
