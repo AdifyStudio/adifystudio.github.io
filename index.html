@@ -3,15 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DesignAidfyStudio</title>
+<title>SEO Uyumlu Index Sayfası</title>
 <style>
   body, html {
     height: 100%;
     margin: 0;
-    background-color: #000; /* Sadece siyah arkaplan */
+    background-color: #000; /* Siyah arkaplan */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Elemanları dikey hizala */
+    position: relative; /* Göreceli pozisyon */
+    overflow: hidden; /* Taşma durumunda içeriği kes */
   }
 
   .neon-text {
@@ -19,6 +22,7 @@
     font-size: 6vw; /* Harf boyutunu cihazın genişliğine göre ayarla */
     color: transparent;
     white-space: nowrap; /* Metni bir satırda tut */
+    margin-bottom: 1em; /* Yazı ile şekil arasına boşluk bırak */
   }
 
   .neon-letter {
@@ -90,22 +94,47 @@
       color: #FFFF00; /* Sarı */
     }
   }
+
+  /* Sarı neon kare animasyonu */
+  .neon-square {
+    position: absolute;
+    bottom: 1.5em; /* Yazının altına yakın */
+    left: calc(50% - 25px); /* Ortadan başla */
+    width: 50px; /* Genişlik */
+    height: 50px; /* Yükseklik */
+    background-color: transparent;
+    border: 2px solid #FFFF00; /* Sarı kenarlık */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    animation: square-animation 3s linear infinite; /* Animasyon */
+  }
+
+  @keyframes square-animation {
+    0% {
+      transform: rotate(0deg); /* Başlangıç durumu */
+    }
+    100% {
+      transform: rotate(360deg); /* 360 derece dön */
+    }
+  }
 </style>
 </head>
 <body>
   <div class="neon-text">
-    <span class="neon-letter">A</span>
-    <span class="neon-letter">d</span>
-    <span class="neon-letter">i</span>
-    <span class="neon-letter">f</span>
-    <span class="neon-letter">y</span>
-    <span class="neon-letter">S</span>
-    <span class="neon-letter">t</span>
-    <span class="neon-letter">u</span>
-    <span class="neon-letter">d</span>
-    <span class="neon-letter">i</span>
-    <span class="neon-letter">o</span>
+    <span class="neon-letter" style="animation-delay: 0s;">A</span>
+    <span class="neon-letter" style="animation-delay: 0.1s;">d</span>
+    <span class="neon-letter" style="animation-delay: 0.2s;">i</span>
+    <span class="neon-letter" style="animation-delay: 0.3s;">f</span>
+    <span class="neon-letter" style="animation-delay: 0.4s;">y</span>
+    <span class="neon-letter" style="animation-delay: 0.5s;">S</span>
+    <span class="neon-letter" style="animation-delay: 0.6s;">t</span>
+    <span class="neon-letter" style="animation-delay: 0.7s;">u</span>
+    <span class="neon-letter" style="animation-delay: 0.8s;">d</span>
+    <span class="neon-letter" style="animation-delay: 0.9s;">i</span>
+    <span class="neon-letter" style="animation-delay: 1s;">o</span>
   </div>
+
+  <!-- Sarı neon kare -->
+  <div class="neon-square"></div>
 
   <script>
     // Animasyon tamamlandıktan sonra yönlendirme işlemi
