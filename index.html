@@ -8,20 +8,24 @@
   body, html {
     height: 100%;
     margin: 0;
+    background-image: url('https://www.adifystudio.com/backraound.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi tüm sayfa boyutuna sığdır */
+    background-position: center; /* Resmi sayfanın ortasına hizala */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
   }
 
   .neon-text {
     font-family: 'Arial', sans-serif;
-    font-size: 72px;
+    font-size: 6vw; /* Harf boyutunu cihazın genişliğine göre ayarla */
     color: transparent;
+    white-space: nowrap; /* Metni bir satırda tut */
   }
 
   .neon-letter {
     animation: neon-animation 2s infinite alternate;
+    margin-right: 0.2em; /* Harfler arasındaki boşluğu ayarla */
   }
 
   .neon-letter:nth-child(1) {
@@ -106,7 +110,7 @@
     // Animasyon tamamlandıktan sonra yönlendirme işlemi
     setTimeout(function() {
       window.location.href = "https://www.youtube.com/@AdifyStudio";
-    }, 3500); // 3500 milisaniye = 3.5 saniye
+    }, 5000); // 5000 milisaniye = 5 saniye
   </script>
 </body>
 </html>
