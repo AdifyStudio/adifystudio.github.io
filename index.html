@@ -1,146 +1,32 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AdifyStudio.com</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    background-color: #000; /* Siyah arkaplan */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Elemanları dikey hizala */
-    position: relative; /* Göreceli pozisyon */
-    overflow: hidden; /* Taşma durumunda içeriği kes */
-  }
-
-  .neon-text {
-    font-family: 'Arial', sans-serif;
-    font-size: 6vw; /* Harf boyutunu cihazın genişliğine göre ayarla */
-    color: transparent;
-    white-space: nowrap; /* Metni bir satırda tut */
-    margin-bottom: 1em; /* Yazı ile şekil arasına boşluk bırak */
-  }
-
-  .neon-letter {
-    animation: neon-animation 5s linear forwards; /* 5 saniyede sarıya dön */
-    margin-right: 0.2em; /* Harfler arasındaki boşluğu ayarla */
-  }
-
-  .neon-letter:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  .neon-letter:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .neon-letter:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  .neon-letter:nth-child(4) {
-    animation-delay: 0.6s;
-  }
-
-  .neon-letter:nth-child(5) {
-    animation-delay: 0.8s;
-  }
-
-  .neon-letter:nth-child(6) {
-    animation-delay: 1s;
-  }
-
-  .neon-letter:nth-child(7) {
-    animation-delay: 1.2s;
-  }
-
-  .neon-letter:nth-child(8) {
-    animation-delay: 1.4s;
-  }
-
-  .neon-letter:nth-child(9) {
-    animation-delay: 1.6s;
-  }
-
-  .neon-letter:nth-child(10) {
-    animation-delay: 1.8s;
-  }
-
-  .neon-letter:nth-child(11) {
-    animation-delay: 2s;
-  }
-
-  @keyframes neon-animation {
-    0% {
-      color: #0000FF; /* Mavi */
-    }
-    20% {
-      color: #FF0000; /* Kırmızı */
-    }
-    40% {
-      color: #FFFF00; /* Sarı */
-    }
-    60% {
-      color: #00FF00; /* Yeşil */
-    }
-    80% {
-      color: #FF00FF; /* Eflatun */
-    }
-    100% {
-      color: #FFFF00; /* Sarı */
-    }
-  }
-
-  /* Sarı neon kare animasyonu */
-  .neon-square {
-    position: absolute;
-    bottom: 1.5em; /* Yazının altına yakın */
-    left: calc(50% - 25px); /* Ortadan başla */
-    width: 50px; /* Genişlik */
-    height: 50px; /* Yükseklik */
-    background-color: transparent;
-    border: 2px solid #FFFF00; /* Sarı kenarlık */
-    border-radius: 5px; /* Köşeleri yuvarla */
-    animation: square-animation 3s linear infinite; /* Animasyon */
-  }
-
-  @keyframes square-animation {
-    0% {
-      transform: rotate(0deg); /* Başlangıç durumu */
-    }
-    100% {
-      transform: rotate(360deg); /* 360 derece dön */
-    }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müziklerim</title>
 </head>
 <body>
-  <div class="neon-text">
-    <span class="neon-letter" style="animation-delay: 0s;">A</span>
-    <span class="neon-letter" style="animation-delay: 0.1s;">d</span>
-    <span class="neon-letter" style="animation-delay: 0.2s;">i</span>
-    <span class="neon-letter" style="animation-delay: 0.3s;">f</span>
-    <span class="neon-letter" style="animation-delay: 0.4s;">y</span>
-    <span class="neon-letter" style="animation-delay: 0.5s;">S</span>
-    <span class="neon-letter" style="animation-delay: 0.6s;">t</span>
-    <span class="neon-letter" style="animation-delay: 0.7s;">u</span>
-    <span class="neon-letter" style="animation-delay: 0.8s;">d</span>
-    <span class="neon-letter" style="animation-delay: 0.9s;">i</span>
-    <span class="neon-letter" style="animation-delay: 1s;">o</span>
-  </div>
-
-  <!-- Sarı neon kare -->
-  <div class="neon-square"></div>
-
-//  <script>
-    // Animasyon tamamlandıktan sonra yönlendirme işlemi
-   // setTimeout(function() {
-   // window.location.href = "https://www.youtube.com/@AdifyStudio";
-//}, 5000); // 5000 milisaniye = 5 saniye
- // </script>
+    <h1>Müziklerim</h1>
+    <ul>
+        <li>
+            <audio controls>
+                <source src="muzik1.mp3" type="audio/mpeg">
+                Tarayıcınız bu sesi desteklemiyor.
+            </audio>
+        </li>
+        <li>
+            <audio controls>
+                <source src="muzik2.mp3" type="audio/mpeg">
+                Tarayıcınız bu sesi desteklemiyor.
+            </audio>
+        </li>
+        <li>
+            <audio controls>
+                <source src="muzik3.mp3" type="audio/mpeg">
+                Tarayıcınız bu sesi desteklemiyor.
+            </audio>
+        </li>
+        <!-- Daha fazla müzik eklemek için aynı formatta devam edebilirsin -->
+    </ul>
 </body>
 </html>
