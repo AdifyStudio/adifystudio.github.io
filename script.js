@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicList = document.getElementById("music-list");
 
     const musics = [
-        { title: "Midnight Escape", artist: "Code = 0001", url: "musics/0001.mp3" },
+        { title: "Midnight Escape", artist: "0001", url: "musics/0001.mp3" },
         // İsteğe bağlı olarak daha fazla müzik ekleyebilirsiniz
     ];
 
