@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicList = document.getElementById("music-list");
 
     const musics = [
-        { title: "Şarkı 1", artist: "Sanatçı 1", url: "0001.mp3" },
-        { title: "Şarkı 2", artist: "Sanatçı 2", url: "muzik2.mp3" },
-        { title: "Şarkı 3", artist: "Sanatçı 3", url: "muzik3.mp3" }
+        { title: "Midnight Escape", artist: "Code = 0001", url: "0001.mp3" },
+   
     ];
 
     musics.forEach(function(music) {
