@@ -4,7 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdifyStudio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #music-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #music-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            #music-list li {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,13 +67,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 AdifyStudio.com</p>
+        <p>&copy; 2024 Müzik Paylaşım Sitesi</p>
     </footer>
-    <script src="script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Burada müzik listesini dinamik olarak oluşturabilirsiniz
-            // Örnek olarak:
             const musicList = document.getElementById("music-list");
 
             const musics = [
@@ -31,13 +79,16 @@
             ];
 
             musics.forEach(function(music) {
-                const li = document.createElement("li");
-                li.innerHTML = `<strong>${music.title}</strong> - ${music.artist}`;
-                const audio = document.createElement("audio");
-                audio.controls = true;
-                audio.innerHTML = `<source src="${music.url}" type="audio/mpeg">Tarayıcınız bu sesi desteklemiyor.`;
-                li.appendChild(audio);
-                musicList.appendChild(li);
+                // Aynı URL'ye sahip müziğin zaten eklenip eklenmediğini kontrol et
+                if (!musicList.querySelector(`li audio source[src="${music.url}"]`)) {
+                    const li = document.createElement("li");
+                    li.innerHTML = `<strong>${music.title}</strong> - ${music.artist}`;
+                    const audio = document.createElement("audio");
+                    audio.controls = true;
+                    audio.innerHTML = `<source src="${music.url}" type="audio/mpeg">Tarayıcınız bu sesi desteklemiyor.`;
+                    li.appendChild(audio);
+                    musicList.appendChild(li);
+                }
             });
         });
     </script>
