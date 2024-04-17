@@ -1,3 +1,4 @@
+/* Genel stiller */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -46,5 +47,41 @@ footer {
 
     #music-list li {
         width: calc(50% - 20px);
+    }
+}
+
+/* Neon ışıklı müzik çaları */
+.audio-player {
+    position: relative;
+    display: inline-block;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+.audio-player::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ffff00);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.audio-player:hover::after {
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ffff00, 0 0 30px #ff00ff, 0 0 40px #00ffff, 0 0 50px #ffff00, 0 0 60px #ff00ff;
     }
 }
