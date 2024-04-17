@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
+  <title>Music Players</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
   <style>
     /* CSS kodları buraya yapıştırılacak */
     /* Başlık */
@@ -25,6 +24,9 @@
       height: 100vh;
       background: linear-gradient(180deg, #333, #111);
       color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
@@ -33,6 +35,7 @@
       background: #111;
       box-shadow: 0 30px 20px -20px #000;
       box-sizing: border-box;
+      margin: 0 20px;
     }
 
     header {
@@ -176,6 +179,74 @@
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <div class="playlist">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="setting">
+        <i class="fa fa-cog"></i>
+      </div>
+    </header>
+    <main>
+      <div class="album-art">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/00/TheVines_WinningDays.jpg" alt="" />
+      </div>
+      <div class="player">
+        <i class="fa fa-repeat"></i>
+        <i class="fa fa-fast-backward"></i>
+        <i class="fa fa-play"></i>
+        <i class="fa fa-fast-forward"></i>
+        <i class="fa fa-random"></i>
+      </div>
+    </main>
+    <footer>
+      <div class="title">The Vines - Ride
+      </div>
+      <div class="time-tracker">
+        <div class="timer">
+          <div class="bg">
+          </div>
+        </div>
+        <div class="time">00:80</div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="playlist">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="setting">
+        <i class="fa fa-cog"></i>
+      </div>
+    </header>
+    <main>
+      <div class="album-art">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/00/TheVines_WinningDays.jpg" alt="" />
+      </div>
+      <div class="player">
+        <i class="fa fa-repeat"></i>
+        <i class="fa fa-fast-backward"></i>
+        <i class="fa fa-play"></i>
+        <i class="fa fa-fast-forward"></i>
+        <i class="fa fa-random"></i>
+      </div>
+    </main>
+    <footer>
+      <div class="title">The Vines - Ride
+      </div>
+      <div class="time-tracker">
+        <div class="timer">
+          <div class="bg">
+          </div>
+        </div>
+        <div class="time">00:80</div>
+      </div>
+    </footer>
+  </div>
+
   <div class="container">
     <header>
       <div class="playlist">
