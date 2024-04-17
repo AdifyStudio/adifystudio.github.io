@@ -1,108 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Controls</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        /* CSS kodunu buraya yapıştır */
-        @wv-blue--lg-accessible: shade(@wv-blue, 6%);
-        @wv-orange--lg-accessible: shade(@wv-orange, 5%);
-        @wv-orange--sm-accessible: shade(@wv-orange, 22%);
-        @wv-lighter-orange: tint(@wv-orange, 85%);
-        @wv-lightest-orange: tint(@wv-orange, 92%);
-        @background-grey: tint(@wv-lightest-grey, 30%);
-        @background-yellow: tint(@wv-yellow, 85%);
-        @border-radius-xl: @spacer-xl;
-
-        /* resets */
-        button {
-            padding: 0;
-        }
-
-        body {
-            align-items: center;
-            background-color: @background-yellow;
-            /* lightest gray that passes text contrast level AAA on @background-yellow background */
-            color: tint(@wv-charcoal, 16%);
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            position: relative;
-
-            &:before {
-                background:
-                    no-repeat 23vw 30vh url("https://assets.codepen.io/518555/sparkles1.svg"),
-                    no-repeat right 25vw bottom 30vh url("https://assets.codepen.io/518555/sparkles4.svg"),
-                    no-repeat 40vw 30vh ~"/" 35vw url("https://assets.codepen.io/518555/blobStripe.svg");
-                content: '';
-                height: 100%;
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                z-index: -1;
-            }
-
-            &:after {
-                background: no-repeat 25vw 40vh ~"/" 30vw url("https://assets.codepen.io/518555/blobSolid.svg");
-                content: '';
-                height: 100%;
-                left: 0;
-                opacity: 0.8;
-                position: absolute;
-                top: 0;
-                width: 100%;
-                z-index: -2;
-            }
-        }
-
-        /* Diğer CSS kodunu buraya yapıştır */
-    </style>
-</head>
-<body>
-    <div class="media-controls">
-        <div class="media-buttons">
-            <button class="back-button media-button" label="back">
-                <i class="fas fa-step-backward button-icons"></i>
-                <span class="button-text milli">Back</span>
-            </button>
-
-            <button class="rewind-button media-button" label="rewind">
-                <i class="fas fa-backward button-icons"></i>
-                <span class="button-text milli">Rewind</span>
-            </button>
-
-            <button class="play-button media-button" label="play">
-                <i class="fas fa-play button-icons delta"></i>
-                <span class="button-text milli">Play</span>
-            </button>
-
-            <button class="fast-forward-button media-button" label="fast forward">
-
-                <i class="fas fa-forward button-icons"></i>
-                <span class="button-text milli">Forward</span>
-            </button>
-
-            <button class="skip-button media-button" label="skip">
-                <i class="fas fa-step-forward button-icons"></i>
-                <span class="button-text milli">Skip</span>
-            </button>
-        </div>
-        <div class="media-progress">
-            <div class="progress-bar-wrapper progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-            <div class="progress-time-current milli">
-                15:23
-            </div>
-            <div class="progress-time-total milli">
-                34:40
-            </div>
-        </div>
+<div class="container">
+  <header>
+    <div class="playlist">
+      <i class="fa fa-bars"></i>
     </div>
-</body>
-</html>
+    <div class="setting">
+      <i class="fa fa-cog"></i>
+    </div>
+  </header>
+  <main>
+    <div class="album-art">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/00/TheVines_WinningDays.jpg" alt="" />
+    </div>
+    <div class="player">
+      <i class="fa fa-repeat"></i>
+      <i class="fa fa-fast-backward"></i>
+      <i class="fa fa-play"></i>
+      <i class="fa fa-fast-forward"></i>
+      <i class="fa fa-random"></i>
+    </div>
+  </main>
+  <footer>
+    <div class="title">The Vines - Ride
+    </div>
+    <div class="time-tracker">
+      <div class="timer">
+        <div class="bg">
+        </div>
+      </div>
+      <div class="time">00:80</div>
+    </div>
+  </footer>
+</div>
