@@ -15,6 +15,19 @@
       background-color: #f4f4f4;
       margin: 0;
       padding: 20px;
+      display: flex; /* Display flex ekledik */
+    }
+
+    /* Sol konteyner */
+    .left-container {
+      flex: 1; /* Sol konteynerin esnekliğini belirledik */
+    }
+
+    /* Sağ konteyner */
+    .right-container {
+      flex: 1; /* Sağ konteynerin esnekliğini belirledik */
+      padding-left: 20px; /* Araya biraz boşluk bıraktık */
+      border-left: 1px solid #ddd; /* Sol kenarlık ekledik */
     }
 
     /* Liste öğeleri */
@@ -57,99 +70,25 @@
 </head>
 
 <body>
-  <ul class="music-list">
-    <!-- 10 adet müzik listesi öğesi -->
-    <li class="music-item">
-      <span class="artist">Sanatçı 1</span>
-      <span class="song">Şarkı 1</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 2</span>
-      <span class="song">Şarkı 2</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 3</span>
-      <span class="song">Şarkı 3</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 4</span>
-      <span class="song">Şarkı 4</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 5</span>
-      <span class="song">Şarkı 5</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 6</span>
-      <span class="song">Şarkı 6</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 7</span>
-      <span class="song">Şarkı 7</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 8</span>
-      <span class="song">Şarkı 8</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 9</span>
-      <span class="song">Şarkı 9</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-    <li class="music-item">
-      <span class="artist">Sanatçı 10</span>
-      <span class="song">Şarkı 10</span>
-      <div class="player">
-        <!-- Müzik çalar ikonları -->
-        <i class="fa fa-play-circle"></i>
-        <i class="fa fa-pause-circle"></i>
-      </div>
-    </li>
-  </ul>
+  <div class="left-container">
+    <!-- Sol konteyner -->
+  </div>
+  <div class="right-container">
+    <!-- Sağ konteyner -->
+    <ul class="music-list">
+      <!-- 10 adet müzik listesi öğesi -->
+      <li class="music-item">
+        <span class="artist">Sanatçı 1</span>
+        <span class="song">Şarkı 1</span>
+        <div class="player">
+          <!-- Müzik çalar ikonları -->
+          <i class="fa fa-play-circle"></i>
+          <i class="fa fa-pause-circle"></i>
+        </div>
+      </li>
+      <!-- Diğer müzik listesi öğeleri buraya eklenebilir -->
+    </ul>
+  </div>
 </body>
 
 </html>
