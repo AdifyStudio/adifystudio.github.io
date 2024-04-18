@@ -12,22 +12,29 @@
     /* Genel stil */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 20px;
-      display: flex; /* Display flex ekledik */
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
     }
 
     /* Sol konteyner */
     .left-container {
       flex: 1; /* Sol konteynerin esnekliğini belirledik */
+      background-color: #f4f4f4; /* Sol konteynerin arkaplan rengi */
+      padding: 20px;
     }
 
     /* Sağ konteyner */
     .right-container {
       flex: 1; /* Sağ konteynerin esnekliğini belirledik */
-      padding-left: 20px; /* Araya biraz boşluk bıraktık */
-      border-left: 1px solid #ddd; /* Sol kenarlık ekledik */
+      background-color: #f4f4f4; /* Sağ konteynerin arkaplan rengi */
+      padding: 20px;
     }
 
     /* Liste öğeleri */
@@ -70,11 +77,18 @@
 </head>
 
 <body>
+  <header>
+    <h1>Müzik Çalarlar</h1>
+  </header>
   <div class="left-container">
     <!-- Sol konteyner -->
   </div>
   <div class="right-container">
     <!-- Sağ konteyner -->
+    <audio controls>
+      <source src="musics/0001.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     <ul class="music-list">
       <!-- 10 adet müzik listesi öğesi -->
       <li class="music-item">
