@@ -1,108 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Müzik Çalarlar</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    /* CSS kodları buraya yapıştırılacak */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni HTML Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #330033;
+        }
 
-    /* Genel stil */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
 
-    /* Header */
-    header {
-      background-color: black;
-      color: white;
-      padding: 10px 20px;
-    }
+        header {
+            background-color: #000033;
+            padding: 10px;
+            margin: -2px -2px 20px -2px;
+            border-radius: 10px 10px 0 0;
+        }
 
-    /* Sol konteyner */
-    .left-container {
-      flex: 1; /* Sol konteynerin esnekliğini belirledik */
-      background-color: #f4f4f4; /* Sol konteynerin arkaplan rengi */
-      padding: 20px;
-    }
-
-    /* Sağ konteyner */
-    .right-container {
-      flex: 1; /* Sağ konteynerin esnekliğini belirledik */
-      background-color: #f4f4f4; /* Sağ konteynerin arkaplan rengi */
-      padding: 20px;
-    }
-
-    /* Liste öğeleri */
-    .music-item {
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .music-item:last-child {
-      border-bottom: none;
-    }
-
-    .music-item .artist {
-      flex: 1;
-      padding-right: 20px;
-    }
-
-    .music-item .song {
-      flex: 1;
-      padding-right: 20px;
-    }
-
-    .music-item .player {
-      flex-shrink: 0;
-    }
-
-    /* Müzik çalar simgeleri */
-    .player .fa {
-      font-size: 20px;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-
-    .player .fa:hover {
-      color: blue;
-    }
-  </style>
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>Müzik Çalarlar</h1>
-  </header>
-  <div class="left-container">
-    <!-- Sol konteyner -->
-  </div>
-  <div class="right-container">
-    <!-- Sağ konteyner -->
-    <audio controls>
-      <source src="musics/0001.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <ul class="music-list">
-      <!-- 10 adet müzik listesi öğesi -->
-      <li class="music-item">
-        <span class="artist">Sanatçı 1</span>
-        <span class="song">Şarkı 1</span>
-        <div class="player">
-          <!-- Müzik çalar ikonları -->
-          <i class="fa fa-play-circle"></i>
-          <i class="fa fa-pause-circle"></i>
-        </div>
-      </li>
-      <!-- Diğer müzik listesi öğeleri buraya eklenebilir -->
-    </ul>
-  </div>
+    <div class="container">
+        <header>
+            <h1>Başlık</h1>
+        </header>
+        <h2>Ana Konteyner Başlık</h2>
+        <p>Bu içerik, ana konteynerin içine gelecek</p>
+    </div>
 </body>
 
 </html>
