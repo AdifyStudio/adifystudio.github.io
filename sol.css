@@ -6,7 +6,7 @@
 
 .solkonteyner {
     background-color: black;
-    width: calc(35% - 20px); /* Sol konteynerin genişliği */
+    width: calc(40% - 20px); /* Sol konteynerin genişliği */
     padding: 5px;
     border-radius: 10px;
     color: white;

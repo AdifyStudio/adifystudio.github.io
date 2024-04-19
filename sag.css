@@ -1,6 +1,6 @@
 .sagkonteyner {
     background-color: black;
-    width: calc(35% - 20px); /* Sağ konteynerin genişliği */
+    width: calc(40% - 20px); /* Sağ konteynerin genişliği */
     padding: 20px;
     margin-left: 20px; /* Sağ ve sol tarafta boşluk bırak */
     border-radius: 10px;
