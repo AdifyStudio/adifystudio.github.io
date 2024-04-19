@@ -1,8 +1,7 @@
 header {
-      background-image: url('images/header.jpg');
- 
-    padding: 20px 40px; /* Yukarıdan ve aşağıdan 20 piksel, sağdan ve soldan 10 piksel boşluk */
-    text-align: left;
+    background-image: url('images/header.jpg');
+    padding: 20px; /* Mobil cihazlarda daha az boşluk */
+    text-align: center; /* Başlığı merkezle */
     color: white;
     margin-bottom: 20px;
     position: relative;
@@ -10,33 +9,28 @@ header {
 
 .container-wrapper {
     display: flex;
-    justify-content: space-between; /* İçerikleri sağ ve sol tarafa yay */
+    flex-direction: column; /* Mobil cihazlarda sütun şeklinde görüntüle */
+    align-items: center; /* İçeriği merkezle */
 }
 
 .search-box {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    position: relative; /* Mutlak pozisyon yerine göreceli pozisyon */
+    margin-top: 20px; /* Mobil cihazlarda daha fazla boşluk */
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="submit"] {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 200px;
+    width: 80%; /* Mobil cihazlarda daha uygun genişlik */
+    max-width: 300px; /* Maksimum genişlik belirleme */
 }
 
 input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #336600;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-top: 10px; /* Mobil cihazlarda daha fazla boşluk */
 }
 
 h1 {
-    margin-left: 20px; /* Başlığı sağa doğru kaydır */
+    margin: 0; /* Başlığın etrafındaki boşlukları kaldır */
 }
-
