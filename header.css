@@ -1,1 +1,42 @@
+header {
+      background-image: url('images/header.jpg');
+ 
+    padding: 20px 40px; /* Yukarıdan ve aşağıdan 20 piksel, sağdan ve soldan 10 piksel boşluk */
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between; /* İçerikleri sağ ve sol tarafa yay */
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #336600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    margin-left: 20px; /* Başlığı sağa doğru kaydır */
+}
 
