@@ -1,11 +1,10 @@
 .alt-header {
-    margin-top: 20px; /* Mobil cihazlarda daha az boşluk */
-    text-align: center;
+    margin-top: 50px;
+ text-align: center;
 }
 
 .alt-konteyner {
     background-color: black;
     color: white;
-    padding: 10px; /* Daha az dolgu alanı */
-    margin-top: 20px; /* Mobil cihazlarda daha az boşluk */
+    padding: 20px;
 }
