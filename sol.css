@@ -1,45 +1,66 @@
 .container-wrapper {
     display: flex;
-    flex-direction: column; /* Mobil cihazlarda sütun şeklinde görüntüle */
-    align-items: center; /* İçeriği merkezle */
-    margin: 0 20px; /* Mobil cihazlarda daha az kenar boşluğu */
+    justify-content: space-between;
+    margin: 0 20px; /* Genel kenar boşluğu azaltıldı */
 }
 
 .solkonteyner {
     background-color: black;
-    width: 100%; /* Mobil cihazlarda tam genişlik */
+    width: 100%; /* Genişlik yüzdeye çevrildi */
     padding: 5px;
     border-radius: 10px;
     color: white;
-    margin: 20px 0; /* Mobil cihazlarda daha fazla boşluk */
     overflow-y: auto;
     max-height: 800px; /* İçerik konteynırının maksimum yüksekliği */
+    margin: 0; /* Masaüstü kenar boşlukları kaldırıldı */
 }
 
 .inner-container {
     background-color: #F0F8FF; /* Sarı arkaplan rengi */
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 10px; /* Boşluklar artırıldı */
     border-radius: 10px;
     color: black;
     display: flex;
     align-items: center;
     position: relative; /* Konumlandırma için */
-    max-height: 60px;
+    max-height: 80px; /* Yükseklik artırıldı */
 }
 
 .inner-container img {
     width: 64px; /* Resim genişliği azaltıldı */
     height: auto; /* Yükseklik otomatik */
-    margin-right: 10px; /* Sağ kenardan boşluk */
+    margin-right: 10px; /* Sağ kenardan boşluk artırıldı */
     border-radius: 5px; /* Köşe yuvarlaklığı */
     object-fit: cover; /* Resmi içeri sığdır */
 }
 
 .inner-container h2 {
-    margin-left: 10px; /* Resimden sonra başlığa boşluk */
+    margin-left: 10px; /* Resimden sonra başlığa boşluk artırıldı */
 }
 
 audio {
     margin-left: auto;
+}
+
+/* Mobil cihazlar için media query */
+@media only screen and (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column; /* Sütun düzeni */
+        margin: 0; /* Kenar boşlukları kaldırıldı */
+    }
+
+    .solkonteyner {
+        width: 100%; /* Genişlik yüzdeye çevrildi */
+        margin: 0; /* Kenar boşlukları kaldırıldı */
+    }
+
+    .inner-container img {
+        width: 48px; /* Resim genişliği azaltıldı */
+        margin-right: 5px; /* Sağ kenardan boşluk artırıldı */
+    }
+
+    .inner-container h2 {
+        margin-left: 5px; /* Başlığa boşluk artırıldı */
+    }
 }
