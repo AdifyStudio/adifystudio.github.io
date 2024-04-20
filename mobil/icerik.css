@@ -1,0 +1,15 @@
+/* İçerik konteynırı */
+.icerik-container {
+  background-color: black; /* Siyah arkaplan rengi */
+  text-align: center; /* İçerik ortalanıyor */
+  padding: 20px; /* Kenar boşlukları */
+  margin: 0 auto; /* Merkezde hizalama */
+  max-width: 600px; /* Maksimum genişlik */
+}
+
+/* İçerik stil bilgileri */
+.icerik {
+  color: white; /* Beyaz metin rengi */
+}
+
+/* Ekstra stiller eklenebilir */
