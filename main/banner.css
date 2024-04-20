@@ -1,0 +1,81 @@
+.neon-text {
+    color: #ffffff; /* Yazı rengi */
+    text-align: center; /* Metni ortala */
+    font-size: 48px; /* Yazı boyutu */
+
+    position: relative; /* Mutlaka pozisyon al */
+}
+
+.neon-letter:nth-child(1) {
+    animation: neon-animation 3s infinite alternate 0s; /* A - Kırmızı */
+}
+
+.neon-letter:nth-child(2) {
+    animation: neon-animation 3s infinite alternate 0.5s; /* d - Pembe */
+}
+
+.neon-letter:nth-child(3) {
+    animation: neon-animation 3s infinite alternate 1s; /* i - Sarı */
+}
+
+.neon-letter:nth-child(4) {
+    animation: neon-animation 3s infinite alternate 1.5s; /* f - Yeşil */
+}
+
+.neon-letter:nth-child(5) {
+    animation: neon-animation 3s infinite alternate 2s; /* y - Mavi */
+}
+
+.neon-letter:nth-child(6) {
+    animation: neon-animation 3s infinite alternate 2.5s; /* S - Indigo */
+}
+
+.neon-letter:nth-child(7) {
+    animation: neon-animation 3s infinite alternate 3s; /* t - Mor */
+}
+
+.neon-letter:nth-child(8) {
+    animation: neon-animation 3s infinite alternate 3.5s; /* u - Pembe */
+}
+
+.neon-letter:nth-child(9) {
+    animation: neon-animation 3s infinite alternate 4s; /* d - Altın */
+}
+
+.neon-letter:nth-child(10) {
+    animation: neon-animation 3s infinite alternate 4.5s; /* i - Turuncu */
+}
+
+.neon-letter:nth-child(11) {
+    animation: neon-animation 3s infinite alternate 5s; /* o - Indigo */
+}
+
+.neon-letter:nth-child(12) {
+    animation: neon-animation 3s infinite alternate 5.5s; /* . - Kırmızı */
+}
+
+.neon-letter:nth-child(13) {
+    animation: neon-animation 3s infinite alternate 6s; /* c - Pembe */
+}
+
+.neon-letter:nth-child(14) {
+    animation: neon-animation 3s infinite alternate 6.5s; /* o - Sarı */
+}
+
+.neon-letter:nth-child(15) {
+    animation: neon-animation 3s infinite alternate 7s; /* m - Yeşil */
+}
+
+@keyframes neon-animation {
+    0% { color: #FF0000; } /* Kırmızı */
+    10% { color: #FF69B4; } /* Pembe */
+    20% { color: #FFFF00; } /* Sarı */
+    30% { color: #00FF00; } /* Yeşil */
+    40% { color: #0000FF; } /* Mavi */
+    50% { color: #4B0082; } /* Indigo */
+    60% { color: #9400D3; } /* Mor */
+    70% { color: #FF1493; } /* Pembe */
+    80% { color: #FFD700; } /* Altın */
+    90% { color: #FFA500; } /* Turuncu */
+    100% { color: #8A2BE2; } /* Indigo */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yönlendirme</title>
+<script>
+    // Tarayıcı boyutunu kontrol et
+    function redirectToCorrectPage() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Mobil cihazda ise mobil dizinine yönlendir
+            window.location.href = "mobil/index.html";
+        } else {
+            // Masaüstü cihazda ise main dizinine yönlendir
+            window.location.href = "main/index.html";
+        }
+    }
+
+    // Sayfa yüklendiğinde kontrol fonksiyonunu çağır
+    window.onload = redirectToCorrectPage;
+</script>
+</head>
+<body>
+    <!-- Bu içerik görüntülenmeyecek, sadece yönlendirme için JavaScript kullanılıyor -->
+</body>
+</html>
