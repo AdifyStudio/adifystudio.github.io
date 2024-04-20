@@ -1,0 +1,10 @@
+.inner-container h2 {
+    position: absolute; /* Mutlak pozisyonlandırma */
+    top: 50%; /* Üst kenarı ortala */
+    left: 50%; /* Sol kenarı ortala */
+    transform: translate(-50%, -50%); /* Merkeze hizalama */
+    background-color: rgba(255, 255, 255, 0.7); /* Arkaplan rengi ve opaklık */
+    padding: 10px; /* İçerik etrafındaki boşluk */
+    border-radius: 5px; /* Köşe yuvarlama */
+    z-index: 1; /* Ön plana alma */
+}
