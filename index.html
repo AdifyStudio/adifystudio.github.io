@@ -29,11 +29,23 @@
             background-color: rgba(0, 0, 0, 0.7); /* Siyah rengi, %70 saydamlıkta */
             height: 500px;
             width: 1000px; /* Genişlik 1000 piksel */
-            margin: auto;
             text-align: center;
             color: white;
             padding: 20px;
-            margin-top: 200px; /* Header'ın altından 200px aşağı kaydırır */
+            margin-top: 140px; /* Header'ın altından 140px aşağı kaydırır */
+            box-sizing: border-box; /* İçerik kutusunun iç ve dış kenar boşlukları dahil edilir */
+        }
+
+        /* Mobil cihazlar için ek stiller */
+        @media screen and (max-width: 768px) {
+            #icerik {
+                width: 90%; /* Mobil cihazlarda içeriğin genişliğini yüzde olarak ayarla */
+                padding: 10px; /* Kenar boşlukları azalt */
+                margin-top: 80px; /* Header'ın altından 80px aşağı kaydır */
+            }
+            header {
+                height: 80px; /* Header'ın yüksekliğini azalt */
+            }
         }
     </style>
 </head>
@@ -43,7 +55,7 @@
         <p>Bu bir DJ arka planlı sayfadır.</p>
     </header>
     <div id="icerik">
-       Giriş
+        Giriş
 
 Toplumu oluşturan her bir insana, özellikle, kendi hâlinde yaşayıp gidenlere eserlerinde yer veren Memduh Şevket Esendal’ın hikâyeleri birey ve toplum arasındaki karşılıklı etkileşimi analiz etmede mühim malzemeler sunar. Türk toplumunu ve kültürünü Esendal’ın gözünden yorumlamada onun sadece edebiyatçı değil, 1950’lere dek süren siyasi kimliği, bir “toplum mühendisi” olması da büyük önem arz eder. O, Cumhuriyet ideallerine ve Kemalizm’e bağlı olmakla beraber 1923 sonrası yeni yaşamda bulduğu olumsuz yanları da eleştirir. Eleştirdiği tutum ve davranışı sergileyen kişileri peşin bir hükümle yargılamak yerine eserlerinde onları, davranışlarının nedenlerini, tercihlerinin kaynaklarını anlamaya çabalar. Bu bağlamda, hikâyelerinde sebep ve sonuçlarıyla birlikte yer verdiği ancak bugüne dek hakkında bu konu özelinde kapsamlı bir çalışma yapılmayan halk inançları yazarın anlamaya çalıştığı konulardan biridir. Literatürde kimi araştırmacılar tarafından batıl olarak nitelendirilen halk inançları yeterince gerekçesi bulunmayan, kesin olmayan şeyleri doğru saymaya, akıl yoluyla genel geçer bir doğrulama yapmadan, nesnel delillere gerek duymaksızın öznel olarak doğrulamanın yeterli bulunduğu inançlardır (Akarsu 1975: 97). Cin veya şeytan inancının yansımaları gibi kozmolojiden kaynaklanan, kara kedi görmeyle şansızlığı ilişkilendirmek gibi sosyal olarak paylaşılan, bireylerin yaşadığı doğaüstü tecrübeler sonucu oluşan ve bireyin şanslı bir sayısının bulunması gibi kişisel inançlardan söz edilebilir (Köse, Ayten 2009: 51). Hangi sınıflandırmaya tabi tutulursa tutulsun, her inanış var olduğu toplumun eğilimleriyle, paylaşılan ortak kültürel hafızayla şekillenir.
 
