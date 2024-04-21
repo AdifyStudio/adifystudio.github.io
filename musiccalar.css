@@ -14,9 +14,6 @@ header {
     text-align: center;
     width: 100%;
     height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
 }
 
@@ -25,8 +22,9 @@ header {
     width: 100%;
     text-align: center;
     color: white;
-    padding: 150px 20px 20px;
+    padding: 5px 20px; /* Header'ın altına 5 piksel boşluk bırakır */
     box-sizing: border-box;
+    margin-top: 19px; /* Header'ın altından 101 piksel aşağı alır */
 }
 
 #musiccalar {
@@ -86,9 +84,11 @@ header {
 /* Mobil cihazlar için ek stiller */
 @media screen and (max-width: 768px) {
     header {
-        height: 101px;
+        position: relative; /* Sabit kalma özelliğini kaldırır */
+        height: auto;
     }
     #icerik {
-        padding-top: 101px;
+        padding-top: 5px; /* Header'ın sabit kalmaması nedeniyle içerikle header arasındaki boşluğu ayarlar */
+        margin-top: 5px; /* Header'ın altından 5 piksel aşağı alır */
     }
 }
