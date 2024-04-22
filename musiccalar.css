@@ -84,6 +84,11 @@ header {
     box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
 }
 
+.download-icon {
+    width: 20px;
+    height: 20px;
+}
+
 /* Mobil cihazlar için ek stiller */
 @media screen and (max-width: 768px) {
     header {
@@ -93,5 +98,10 @@ header {
     #icerik {
         padding-top: 5px; /* Header'ın sabit kalmaması nedeniyle içerikle header arasındaki boşluğu ayarlar */
         margin-top: 5px; /* Header'ın altından 5 piksel aşağı alır */
+    }
+
+    .download-icon {
+        width: 10px;
+        height: 10px;
     }
 }
