@@ -2,9 +2,9 @@
 const musicList = [
     { name: "Beneath the Stars - İndie-Pop", src: "music/Beneath_the_Stars.mp3" },
     { name: "Dreamer's Solace - indie-Pop", src: "music/Dreamers_Solace.mp3" },
-    { name: "Room Of Dreams indie-pop ", src: "music/Room_Of_Dreams.mp3" },
-    { name: "Echoes of Solitude", src: "music/Echoes_of_Solitude.mp3" },
-    { name: "Starlit Revire", src: "music/Starlit_Revire.mp3" }
+    { name: "Room Of Dreams - indie-pop ", src: "music/Room_Of_Dreams.mp3" },
+    { name: "Echoes of Solitude - İndie-Pop", src: "music/Echoes_of_Solitude.mp3" },
+    { name: "Starlit Revire - İndie-Pop", src: "music/Starlit_Revire.mp3" }
 ];
 
 // Müzik listesini oluşturma
