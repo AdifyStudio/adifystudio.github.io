@@ -4,6 +4,10 @@ const musicList = [
     { name: "Dreamer's Solace - indie-Pop", src: "music/Dreamers_Solace.mp3" },
     { name: "Room Of Dreams - indie-pop ", src: "music/Room_Of_Dreams.mp3" },
     { name: "Echoes of Solitude - İndie-Pop", src: "music/Echoes_of_Solitude.mp3" },
+     { name: "Before_Death - Neo-Classical Orchestra", src: "music/Before_Death.mp3" },
+      { name: "Quivering_Radiance - Neo-Classical Orchestra", src: "music/Quivering_Radiance.mp3" },
+      { name: "Silence - Neo-Classical Orchestra", src: "music/Silence.mp3" },
+        { name: "Smoky_Mountain - Neo-Classical Orchestra", src: "music/Smoky_Mountain.mp3" },
     { name: "Starlit Revire - İndie-Pop", src: "music/Starlit_Revire.mp3" }
 ];
 
