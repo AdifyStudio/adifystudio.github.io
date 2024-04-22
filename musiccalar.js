@@ -1,8 +1,8 @@
 // Müzik listesi
 const musicList = [
-    { name: "Song 1", src: "music/song1.mp3" },
-    { name: "Song 2", src: "music/song2.mp3" },
-    { name: "Song 3", src: "music/song3.mp3" },
+    { name: "Beneath the Stars - İndie-Pop", src: "music/Beneath_the_Stars.mp3" },
+    { name: "Dreamer's Solace - indie-Pop", src: "music/Dreamers_Solace.mp3" },
+    { name: "Room Of Dreams indie-pop ", src: "music/Room_Of_Dreams.mp3" },
     { name: "Song 4", src: "music/song4.mp3" },
     { name: "Song 5", src: "music/song5.mp3" }
 ];
@@ -11,7 +11,12 @@ const musicList = [
 const musicListContainer = document.getElementById("musicList");
 musicList.forEach((music, index) => {
     const listItem = document.createElement("li");
-    listItem.textContent = music.name;
+    listItem.innerHTML = `
+        <span class="music-name">${music.name}</span>
+        <a href="${music.src}" download>
+            <img src="images/download.png" alt="Download" class="download-icon">
+        </a>
+    `;
     listItem.dataset.index = index;
     listItem.addEventListener("click", () => playMusic(index));
     musicListContainer.appendChild(listItem);
@@ -38,7 +43,12 @@ function renderMusicList(musicArray) {
     musicListContainer.innerHTML = "";
     musicArray.forEach((music, index) => {
         const listItem = document.createElement("li");
-        listItem.textContent = music.name;
+        listItem.innerHTML = `
+            <span class="music-name">${music.name}</span>
+            <a href="${music.src}" download>
+                <img src="images/download.png" alt="Download" class="download-icon">
+            </a>
+        `;
         listItem.dataset.index = index;
         listItem.addEventListener("click", () => playMusic(index));
         musicListContainer.appendChild(listItem);
