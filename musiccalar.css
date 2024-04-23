@@ -23,12 +23,12 @@ header {
 }
 
 h1 {
-    font-size: 2rem; /* Başlık font boyutunu belirler */
-    margin-bottom: 10px; /* AdifyStudio yazısı ile altındaki yazı arasında 10 piksel boşluk bırakır */
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 0.8rem; /* Paragraf font boyutunu belirler */
+    font-size: 0.8rem;
 }
 
 #icerik {
@@ -36,9 +36,9 @@ p {
     width: 100%;
     text-align: center;
     color: white;
-    padding: 5px 20px; /* Header'ın altına 5 piksel boşluk bırakır */
+    padding: 5px 20px;
     box-sizing: border-box;
-    margin-top: 19px; /* Header'ın altından 101 piksel aşağı alır */
+    margin-top: 19px;
 }
 
 #musiccalar {
@@ -48,14 +48,8 @@ p {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     box-sizing: border-box;
-    max-width: 1000px;
+    max-width: 850px;
     margin: 0 auto;
-}
-
-#musicPlayer {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
 }
 
 #musicList {
@@ -64,6 +58,7 @@ p {
     margin-bottom: 20px;
     width: 100%;
     max-width: 100%;
+    max-height: 420px;
     overflow-y: auto;
 }
 
@@ -76,11 +71,16 @@ p {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    font-size: 14px; /* Liste metin boyutunu düşürür */
+    font-size: 14px;
 }
 
 #musicList li:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+#musicList li.selected {
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 2px solid rgba(255, 255, 0, 0.5);
 }
 
 #searchInput {
@@ -104,33 +104,13 @@ p {
     height: 20px;
 }
 
-/* Mobil cihazlar için ek stiller */
-@media screen and (max-width: 768px) {
-    header {
-        position: relative; /* Sabit kalma özelliğini kaldırır */
-        height: 60px; /* Header yüksekliğini 60 piksele düşürür */
-        font-size: 14px; /* Yazı boyutunu düşürür */
-    }
-    #icerik {
-        padding-top: 5px; /* Header'ın sabit kalmaması nedeniyle içerikle header arasındaki boşluğu ayarlar */
-        margin-top: 5px; /* Header'ın altından 5 piksel aşağı alır */
-    }
-
-    #musicList li {
-        font-size: 12px; /* Liste metin boyutunu biraz daha düşürür */
-    }
-
-    .download-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    h1 {
-        font-size: 1.5rem; /* AdifyStudio yazısını %50 daha küçültür */
-        margin-bottom: 5px; /* Başlık ile altındaki yazı arasında 5 piksel boşluk bırakır */
-    }
-
-    p {
-        font-size: 0.7rem; /* Paragraf font boyutunu belirler */
-    }
+#customFooter {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0.8;
 }
