@@ -8,6 +8,7 @@ const musicList = [
     { name: "March_of_Honor.mp3", src: "music/March_of_Honor.mp3" },
     { name: "Noble_Stance.mp3", src: "music/Noble_Stance.mp3" },
   { name: "Noble_Stance.mp3", src: "music/Noble_Stance.mp3" },
+    { name: "Deep_breath.mp3", src: "music/Noble_Stance.mp3" },
     { name: "Celestial_Grace.mp3", src: "music/Silence.mp3" },
     { name: "Smoky_Mountain.mp3", src: "music/Smoky_Mountain.mp3" },
     { name: "The_Morning_Sun.mp3", src: "music/The_Morning_Sun.mp3" },
