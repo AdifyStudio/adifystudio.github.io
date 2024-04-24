@@ -1,0 +1,15 @@
+/* a.css */
+
+#muzikEkleButton,
+#muzikSilButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 0 10px;
+    display: inline-block; /* Butonları blok olarak ayarla */
+}
+
+#customFooter {
+    display: flex; /* Footer içeriğini flex container olarak ayarla */
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center; /* İçeriği dikeyde ortala */
+}
