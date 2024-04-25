@@ -7,7 +7,7 @@ const musicList = [
     { name: "Resurgence_March.mp3", src: "music/Resurgence_March.mp3" },
     { name: "Faith_March.mp3", src: "music/Faith_March.mp3" },
     { name: "Noble_Stance.mp3", src: "music/Noble_Stance.mp3" },
-    { name: "Laughing_Guitar.mp3", src: "Laughing_Guitar.mp3" },
+    { name: "Laughing_Guitar.mp3", src: "music/Laughing_Guitar.mp3" },
     { name: "Dance_of_Birds.mp3", src: "music/Dance_of_Birds.mp3" },
     { name: "Joyful Acoustics.mp3", src: "music/Joyful Acoustics.mp3" },
     { name: "The_Morning_Sun.mp3", src: "music/The_Morning_Sun.mp3" },
