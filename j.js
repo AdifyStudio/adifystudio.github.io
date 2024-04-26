@@ -1,5 +1,6 @@
 const musicList = [
     { name: "Silence.mp3", src: "music/Silence.mp3" },
+	{ name: "Donalt_Happy_B-Day", src: "music/Donalt_Happy_B-Day.mp3" },
     { name: "Before_Death.mp3", src: "music/Before_Death.mp3" },
     { name: "Smoky_Mountain.mp3", src: "music/Smoky_Mountain.mp3" },
     { name: "Quivering_Radiance.mp3", src: "music/Quivering_Radiance.mp3" },
