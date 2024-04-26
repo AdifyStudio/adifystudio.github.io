@@ -9,13 +9,13 @@ body {
     background-image: url("images/dj.png"); /* Genel arka plan resmi */
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000; /* Arka plan rengi koyu bir ton olsun */
+    background-color: #001; /* Arka plan rengi koyu bir ton olsun */
 }
 
 header {
-    background-image: url("images/wallpaper1.png"); /* Header arka plan resmi */
-    background-size: auto 100%; /* Arka plan resmini yatayda sığdır, dikeyde tamamen göster */
-    background-repeat: no-repeat;
+
+
+    background-color: rgba(0, 0, 0, 0.7);
     background-position: center;
     color: white;
     padding: 10px;
