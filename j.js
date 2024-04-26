@@ -1,25 +1,25 @@
 const musicList = [
-    { name: "Silence.mp3", src: "music/Silence.mp3" },
-	  { name: "Long_Johns.mp3", src: "music/Long_Johns.mp3" },
-	{ name: "Donalt_Happy_B-Day", src: "music/Donalt_Happy_B-Day.mp3" },
-    { name: "Before_Death.mp3", src: "music/Before_Death.mp3" },
-    { name: "Smoky_Mountain.mp3", src: "music/Smoky_Mountain.mp3" },
-    { name: "Quivering_Radiance.mp3", src: "music/Quivering_Radiance.mp3" },
-    { name: "March_of_Honor.mp3", src: "music/March_of_Honor.mp3" },
-    { name: "Resurgence_March.mp3", src: "music/Resurgence_March.mp3" },
-    { name: "Faith_March.mp3", src: "music/Faith_March.mp3" },
-    { name: "Noble_Stance.mp3", src: "music/Noble_Stance.mp3" },
-    { name: "Laughing_Guitar.mp3", src: "music/Laughing_Guitar.mp3" },
-    { name: "Dance_of_Birds.mp3", src: "music/Dance_of_Birds.mp3" },
-    { name: "Joyful Acoustics.mp3", src: "music/Joyful Acoustics.mp3" },
-    { name: "The_Morning_Sun.mp3", src: "music/The_Morning_Sun.mp3" },
-    { name: "Celestial_Grace.mp3", src: "music/Celestial_Grace.mp3" },
-    { name: "Deep_breath.mp3", src: "music/Deep_breath.mp3" },
-    { name: "Cartoon1.mp3", src: "music/Cartoon1.mp3" },
-    { name: "Cartoon2.mp3", src: "music/Cartoon2.mp3" },
-    { name: "Cartoon3.mp3", src: "music/Cartoon3.mp3" },
-	{ name: "Money_On_The_Ground.mp3", src: "music/Money_On_The_Ground.mp3" },
-    { name: "Escape_From_The Airport.mp3", src: "music/Escape_From_The Airport.mp3" }
+    { name: "Silence.mp3", src: "music/Silence.mp3", youtubeLink: "https://www.youtube.com/watch?v=gFouYIoKceA" },
+    { name: "Long_Johns.mp3", src: "music/Long_Johns.mp3", youtubeLink: "https://www.youtube.com/watch?v=C9pqe-PD-A0" },
+    { name: "Donalt_Happy_B-Day", src: "music/Donalt_Happy_B-Day.mp3", youtubeLink: "https://www.youtube.com/watch?v=kQpM74WbbCo" },
+    { name: "Before_Death.mp3", src: "music/Before_Death.mp3", youtubeLink: "https://www.youtube.com/watch?v=cVcwG6Lekf8" },
+    { name: "Smoky_Mountain.mp3", src: "music/Smoky_Mountain.mp3", youtubeLink: "https://www.youtube.com/watch?v=Jws_ucXYuJ4" },
+    { name: "Quivering_Radiance.mp3", src: "music/Quivering_Radiance.mp3", youtubeLink: "https://www.youtube.com/watch?v=7M2OXShodwg" },
+    { name: "March_of_Honor.mp3", src: "music/March_of_Honor.mp3", youtubeLink: "https://www.youtube.com/watch?v=eHt9E98yrMk" },
+    { name: "Resurgence_March.mp3", src: "music/Resurgence_March.mp3", youtubeLink: "https://www.youtube.com/watch?v=yFFggf9yCoE" },
+    { name: "Faith_March.mp3", src: "music/Faith_March.mp3", youtubeLink: "https://www.youtube.com/watch?v=tV7x4EzCkmM" },
+    { name: "Noble_Stance.mp3", src: "music/Noble_Stance.mp3", youtubeLink: "https://www.youtube.com/watch?v=XaDfpiFsmiI" },
+    { name: "Laughing_Guitar.mp3", src: "music/Laughing_Guitar.mp3", youtubeLink: "https://www.youtube.com/watch?v=p95t_TfCmbU" },
+    { name: "Dance_of_Birds.mp3", src: "music/Dance_of_Birds.mp3", youtubeLink: "https://www.youtube.com/watch?v=NyfN6SpdciI" },
+    { name: "Joyful Acoustics.mp3", src: "music/Joyful Acoustics.mp3", youtubeLink: "https://www.youtube.com/watch?v=eztHUFzlY8c" },
+    { name: "The_Morning_Sun.mp3", src: "music/The_Morning_Sun.mp3", youtubeLink: "https://www.youtube.com/watch?v=5SBS49I-AAc" },
+    { name: "Celestial_Grace.mp3", src: "music/Celestial_Grace.mp3", youtubeLink: "https://www.youtube.com/watch?v=BHydwOlVFII" },
+    { name: "Deep_breath.mp3", src: "music/Deep_breath.mp3", youtubeLink: "https://www.youtube.com/watch?v=evSbqxxbgUc" },
+    { name: "Cartoon1.mp3", src: "music/Cartoon1.mp3", youtubeLink: "https://www.youtube.com/watch?v=csDCoC484H4" },
+    { name: "Cartoon2.mp3", src: "music/Cartoon2.mp3", youtubeLink: "https://www.youtube.com/watch?v=RoR88KQvgLU" },
+    { name: "Cartoon3.mp3", src: "music/Cartoon3.mp3", youtubeLink: "https://www.youtube.com/watch?v=-2hxztIcI1o" },
+    { name: "Money_On_The_Ground.mp3", src: "music/Money_On_The_Ground.mp3", youtubeLink: "https://www.youtube.com/watch?v=V5dunYXFJv0" },
+    { name: "Escape_From_The Airport.mp3", src: "music/Escape_From_The Airport.mp3", youtubeLink: "https://www.youtube.com/watch?v=B-dk1JCrJJo" }
 ];
 
 const musicListContainer = document.getElementById("musicList");
@@ -39,10 +39,15 @@ function initializeMusicList() {
     musicList.forEach((music, index) => {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
-            <span class="music-name">${music.name}</span>
+            <span class="youtube-icon">
+                <a href="${music.youtubeLink}" target="_blank">
+                    <img src="images/youtube.png" alt="YouTube" class="download-icon">
+                </a>
+            </span>
             <a href="${music.src}" download>
                 <img src="images/download.png" alt="Download" class="download-icon">
             </a>
+            <span class="music-name">${music.name}</span>
         `;
         listItem.dataset.index = index;
         listItem.addEventListener("click", () => toggleMusic(listItem));
@@ -109,10 +114,15 @@ function displayFilteredMusicList(filteredMusicList) {
     filteredMusicList.forEach((music, index) => {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
-            <span class="music-name">${music.name}</span>
+            <span class="youtube-icon">
+                <a href="${music.youtubeLink}" target="_blank">
+                    <img src="images/youtube.png" alt="YouTube" class="download-icon">
+                </a>
+            </span>
             <a href="${music.src}" download>
                 <img src="images/download.png" alt="Download" class="download-icon">
             </a>
+            <span class="music-name">${music.name}</span>
         `;
         listItem.dataset.index = index;
         listItem.addEventListener("click", () => toggleMusic(listItem));

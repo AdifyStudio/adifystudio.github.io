@@ -51,7 +51,7 @@ footer {
 
 #icerik {
     background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
+   
     color: white;
     padding: 5px 20px;
     margin-top: 19px;
@@ -83,16 +83,39 @@ footer {
     justify-content: space-between;
     margin-bottom: 10px;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 5px; /* Sol ve sağ boşluklar */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     font-size: 14px;
+    position: relative;
+}
+
+#musicList li span {
+    flex-grow: 1; /* Yazıların genişliğini maksimuma al */
+    padding-right: 5px; /* Sağ taraftan 5 piksel boşluk */
+}
+
+#musicList li .download-icon,
+#musicList li .youtube-icon {
+    width: 20px; /* İkon boyutu */
+    height: 20px; /* İkon boyutu */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#musicList li .download-icon {
+    right: 5px; /* Sağ boşluk */
+}
+
+#musicList li .youtube-icon {
+    right: 30px; /* YouTube ikonunun download ikonundan 5px solunda */
 }
 
 @media only screen and (max-width: 600px) {
     #musicList li {
         font-size: 10px;
-        padding: 8px;
+        padding: 8px 5px; /* Sol ve sağ boşluklar */
     }
 }
 
@@ -130,9 +153,10 @@ footer {
     border-radius: 10px;
 }
 
-.download-icon {
-    width: 20px;
-    height: 20px;
+.download-icon,
+.youtube-icon {
+    width: 50px;
+    height: 50px;
 }
 
 #customFooter {
