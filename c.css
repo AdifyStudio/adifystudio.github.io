@@ -5,19 +5,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("images/dj.png");
+    font-size: 16px;
+    background-image: url("images/dj.png"); /* Genel arka plan resmi */
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 16px;
+    background-color: #000; /* Arka plan rengi koyu bir ton olsun */
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("images/wallpaper1.png"); /* Header arka plan resmi */
+    background-size: auto 100%; /* Arka plan resmini yatayda sığdır, dikeyde tamamen göster */
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     padding: 10px;
     text-align: center;
-    height: 100px;
+    height: 100px; /* Header yüksekliği */
+    overflow: hidden; /* Header yüksekliği aşıldığında gizleme */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +55,6 @@ footer {
 
 #icerik {
     background-color: rgba(0, 0, 0, 0.7);
-   
     color: white;
     padding: 5px 20px;
     margin-top: 19px;
