@@ -41,3 +41,8 @@
 .slider-next {
     right: 0; /* Sağ kenar */
 }
+
+/* Slider itemlerine hover efekti */
+.slider-item:hover {
+    transform: scale(1.05); /* Üzerine gelince %5 büyütme */
+}

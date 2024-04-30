@@ -41,8 +41,51 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(255, 255, 0, 0.3);
+
 }
+
+
+
+
+
+#menukont {
+    border-radius: 10px;
+    margin: 2px auto; /* Yatay hizalama ve dikey marjin */
+    max-width: 1000px; /* Maksimum genişlik 1000 piksel */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap; /* Eğer sığmazsa alt satıra geçsin */
+    justify-content: center; /* Öğeleri yatayda merkezi hizalama */
+}
+
+.menuitem1 {
+    border-radius: 10px; /* Köşeleri yuvarlak yap */
+    padding: 10px; /* İçerik ile kenar arasında boşluk */
+    height: 200px; /* Yükseklik 200 piksel */
+    flex: 1; /* Öğelerin eşit genişlikte yayılmasını sağlar */
+    margin: 2px; /* Yatayda ve dikeyde 2px boşluk */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat; /* Resim tekrar etmesin */
+    background-size: contain; /* Resim tam olarak sığsın */
+    background-position: center; /* Resmi yatayda ve dikeyde tam ortala */
+    color: white; /* Yazı rengi */
+    cursor: pointer; /* Üzerine gelince el işareti göster */
+    transition: transform 0.2s ease-in-out; /* Animasyonun geçişi */
+}
+
+.menuitem1:hover {
+    transform: scale(1.1); /* Üzerine gelince 10% büyüme */
+}
+
+
+
+
+
+
+
 
 h1 {
     font-size: 2rem;
@@ -55,7 +98,7 @@ p {
 
 div {
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(255, 255, 0, 0.3);
+
 }
 
 footer {

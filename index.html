@@ -11,8 +11,19 @@
 <body>
     <header>
         <h1>AdifyStudio</h1>
-        <p>Download List of Copyright-Free Music</p>
     </header>
+
+    <div id="icerik">
+    <div id="menukont">
+        <a href="/pages/music/index.html" class="menuitem1" style="background-image: url('images/menu/home.png')">Home</a>
+        <a href="/pages/music/index.html" class="menuitem1" style="background-image: url('images/menu/music.png')">Music</a>
+        <a href="/pages/music/index.html" class="menuitem1" style="background-image: url('images/menu/video.png')">Video</a>
+        <a href="/pages/music/index.html" class="menuitem1" style="background-image: url('images/menu/guitar.png')">Guitar Chords</a>
+        <a href="/pages/music/index.html" class="menuitem1" style="background-image: url('images/menu/simon.png')">Simon Game</a>
+    </div>
+
+     </div>
+
     <div id="icerik">
         <div id="sliderContainer" class="slider-container">
             <div class="slider-content">
@@ -31,12 +42,14 @@
             <button class="slider-button slider-next">&#10095;</button>
         </div>
     </div>
-  <div id="icerik">
-    <div id="musiccalar">
-        <input type="text" id="searchInput" placeholder="Search Copyright Free Music...">
-        <ul id="musicList"></ul>
+
+    <div id="icerik">
+        <div id="musiccalar">
+            <input type="text" id="searchInput" placeholder="Search Copyright Free Music...">
+            <ul id="musicList"></ul>
+        </div>
     </div>
-    </div>
+
     <footer id="customFooter">
         <p id="currentMusicName"></p>
         <button id="playButton"></button>
@@ -45,6 +58,7 @@
         <button id="nextButton"></button>
         <button id="prevButton"></button>
     </footer>
+
     <script src="slider.js"></script>
     <script src="j.js"></script>
     <script src="musicList.js"></script>
