@@ -1,0 +1,43 @@
+/* Slider container */
+.slider-container {
+    width: calc(100% - 40px); /* Müzik çalar genişliği kadar, kenar boşlukları düşülerek */
+    max-width: 1000px; /* Maksimum genişlik */
+    margin: 0 auto;
+    height: 200px; /* Yükseklik */
+    overflow: hidden; /* Taşan içeriği gizle */
+    position: relative; /* Pozisyon */
+}
+
+/* Slider içeriği */
+.slider-content {
+    display: flex; /* Flex layout */
+    transition: transform 0.5s ease; /* Geçiş efekti */
+}
+
+/* Slider öğeleri */
+.slider-item {
+    min-width: 100%; /* Öğe genişliği */
+}
+
+/* Slider butonları */
+.slider-button {
+    position: absolute; /* Pozisyon */
+    top: 50%; /* Üst kenar */
+    transform: translateY(-50%); /* Dikey hizalama */
+    background: rgba(0, 0, 0, 0.5); /* Arkaplan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* İmleç türü */
+    padding: 10px; /* Dolgu */
+    z-index: 1; /* Sıralama */
+}
+
+/* Sol buton */
+.slider-prev {
+    left: 0; /* Sol kenar */
+}
+
+/* Sağ buton */
+.slider-next {
+    right: 0; /* Sağ kenar */
+}

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdifyStudio.com - Copyright-Free Music</title>
+    <title>AdifyStudio.com</title>
     <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="icon" type="image/png" href="images/index.png">
 </head>
 <body>
@@ -13,10 +14,28 @@
         <p>Download List of Copyright-Free Music</p>
     </header>
     <div id="icerik">
-        <div id="musiccalar">
-            <input type="text" id="searchInput" placeholder="Search Copyright Free Music...">
-            <ul id="musicList"></ul>
+        <div id="sliderContainer" class="slider-container">
+            <div class="slider-content">
+                <!-- Slider içeriği buraya gelecek -->
+                <div class="slider-item">
+                    <img src="images/slider/s1.png" alt="Slide 1">
+                </div>
+                <div class="slider-item">
+                    <img src="images/slider/s2.png" alt="Slide 2">
+                </div>
+                <div class="slider-item">
+                    <img src="images/slider/s3.png" alt="Slide 3">
+                </div>
+            </div>
+            <button class="slider-button slider-prev">&#10094;</button>
+            <button class="slider-button slider-next">&#10095;</button>
         </div>
+    </div>
+  <div id="icerik">
+    <div id="musiccalar">
+        <input type="text" id="searchInput" placeholder="Search Copyright Free Music...">
+        <ul id="musicList"></ul>
+    </div>
     </div>
     <footer id="customFooter">
         <p id="currentMusicName"></p>
@@ -26,6 +45,7 @@
         <button id="nextButton"></button>
         <button id="prevButton"></button>
     </footer>
+    <script src="slider.js"></script>
     <script src="j.js"></script>
     <script src="musicList.js"></script>
 </body>

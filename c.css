@@ -1,3 +1,19 @@
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow, 0 0 80px yellow;
+    }
+    50% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow, 0 0 80px yellow;
+    }
+}
+
+header h1 {
+    animation: neon 1s infinite alternate;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,8 +29,6 @@ body {
 }
 
 header {
-
-
     background-color: rgba(0, 0, 0, 0.7);
     background-position: center;
     color: white;
@@ -51,6 +65,7 @@ footer {
     border-top: 2px solid rgba(255, 255, 0, 0.5);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(255, 255, 0, 0.3);
+    height: 80px; /* Yeni footer yüksekliği */
 }
 
 #icerik {
@@ -164,7 +179,7 @@ footer {
 
 #customFooter {
     width: 100%;
-    height: 100px;
+    height: 64px; /* Yeni footer yüksekliği */
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     bottom: 0;
@@ -177,32 +192,41 @@ footer {
     border-radius: 50%;
     background-color: #ffcc00;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    width: 50px;
-    height: 50px;
+    width: 25px; /* Buton boyutu %50 daha küçük */
+    height: 25px; /* Buton boyutu %50 daha küçük */
     margin: 5px;
     border: none;
     cursor: pointer;
     background-size: cover;
 }
 
+#playButton,
+#pauseButton,
+#stopButton,
+#nextButton,
+#prevButton {
+    width: 30px; /* Buton boyutu %50 daha küçük */
+    height: 30px; /* Buton boyutu %50 daha küçük */
+}
+
 #playButton {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='48px' height='48px'%3E%3Cpath d='M8 5v14l11-7z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='30px' height='30px'%3E%3Cpath d='M8 5v14l11-7z' /%3E%3C/svg%3E");
 }
 
 #pauseButton {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='48px' height='48px'%3E%3Cpath d='M6 19h4V5H6v14zm8-14v14h4V5h-4z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='30px' height='30px'%3E%3Cpath d='M6 19h4V5H6v14zm8-14v14h4V5h-4z' /%3E%3C/svg%3E");
 }
 
 #stopButton {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='48px' height='48px'%3E%3Cpath d='M6 6h12v12H6z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='30px' height='30px'%3E%3Cpath d='M6 6h12v12H6z' /%3E%3C/svg%3E");
 }
 
 #nextButton {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='48px' height='48px'%3E%3Cpath d='M12 12l-6-6v12zM14 5v14l6-6z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='30px' height='30px'%3E%3Cpath d='M12 12l-6-6v12zM14 5v14l6-6z' /%3E%3C/svg%3E");
 }
 
 #prevButton {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='48px' height='48px'%3E%3Cpath d='M10 12l6 6V6zM10 19h4V5h-4v14z' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' width='30px' height='30px'%3E%3Cpath d='M10 12l6 6V6zM10 19h4V5h-4v14z' /%3E%3C/svg%3E");
 }
 
 #customFooter button:hover {

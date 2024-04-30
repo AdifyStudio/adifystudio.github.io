@@ -1,11 +1,11 @@
 const musicList = [
     { name: "Silence.mp3", src: "music/Silence.mp3", youtubeLink: "https://www.youtube.com/watch?v=gFouYIoKceA" },
     { name: "Long_Johns.mp3", src: "music/Long_Johns.mp3", youtubeLink: "https://www.youtube.com/watch?v=C9pqe-PD-A0" },
-     { name: "Square_Cooking_Pot.mp3", src: "music/Square_Cooking_Pot.mp3", youtubeLink: "https://www.youtube.com/watch?v=y7NyQ98J4ic&list=PLon15JByMMdESj2WYwh08aTuJSiYDlBAI&index=4" },
-      { name: "Smoky_Mountain.mp3", src: "music/Smoky_Mountain.mp3", youtubeLink: "https://www.youtube.com/watch?v=Jws_ucXYuJ4" },
+    { name: "Square_Cooking_Pot.mp3", src: "music/Square_Cooking_Pot.mp3", youtubeLink: "https://www.youtube.com/watch?v=y7NyQ98J4ic&list=PLon15JByMMdESj2WYwh08aTuJSiYDlBAI&index=4" },
+    { name: "Smoky_Mountain.mp3", src: "music/Smoky_Mountain.mp3", youtubeLink: "https://www.youtube.com/watch?v=Jws_ucXYuJ4" },
     { name: "Quivering_Radiance.mp3", src: "music/Quivering_Radiance.mp3", youtubeLink: "https://www.youtube.com/watch?v=7M2OXShodwg" },
     { name: "March_of_Honor.mp3", src: "music/March_of_Honor.mp3", youtubeLink: "https://www.youtube.com/watch?v=eHt9E98yrMk" },
-     { name: "Money_On_The_Ground.mp3", src: "music/Money_On_The_Ground.mp3", youtubeLink: "https://www.youtube.com/watch?v=V5dunYXFJv0" },
+    { name: "Money_On_The_Ground.mp3", src: "music/Money_On_The_Ground.mp3", youtubeLink: "https://www.youtube.com/watch?v=V5dunYXFJv0" },
     { name: "Escape_From_The Airport.mp3", src: "music/Escape_From_The Airport.mp3", youtubeLink: "https://www.youtube.com/watch?v=B-dk1JCrJJo" }
 ];
 
