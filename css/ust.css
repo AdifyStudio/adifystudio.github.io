@@ -94,9 +94,9 @@
 /* Mobil Uyum */
 @media screen and (max-width: 768px) {
     #icon-div img {
-        width: 20px; /* Mobil cihazlar için genişlik ayarı */
+        width: 12px; /* Mobil cihazlar için genişlik ayarı */
         height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-        margin-right: 10px;
+        margin-right: 4px;
         bottom: 5;
    
     }
