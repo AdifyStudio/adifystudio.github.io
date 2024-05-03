@@ -12,7 +12,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-
+    border-radius: 10px;
     width: 200px;
 }
 
@@ -55,7 +55,7 @@
     #banner-div {
         width: 50%; /* Mobil cihazlar için genişlik ayarı */
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
-        margin: 5px auto;
+   
     }
 }
 
