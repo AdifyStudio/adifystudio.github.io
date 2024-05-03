@@ -5,6 +5,7 @@
     border-radius: 10px;
     position: relative;
     margin: 0 auto;
+    position: relative; /* Değişiklik burada */
 }
 
 #banner-div {
@@ -65,11 +66,13 @@
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
         margin-right: -5px;
         border-radius: 10px;
+        position: relative; /* Değişiklik burada */
     }
 
     #icon-div img {
         max-width: 13px; /* Mobil cihazlar için genişlik ayarı */
         max-height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
         margin-bottom: 1px; /* Mobil cihazlar için alt boşluk ayarı */
+        position: relative; /* Değişiklik burada */
     }
 }
