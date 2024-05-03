@@ -84,6 +84,7 @@
         width: 50%; /* Mobil cihazlar için genişlik ayarı */
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
         margin-right: -5px;
+        border-radius: 10px;
    
     }
     
@@ -93,9 +94,10 @@
 /* Mobil Uyum */
 @media screen and (max-width: 768px) {
     #icon-div img {
-        width: 10px; /* Mobil cihazlar için genişlik ayarı */
+        width: 20px; /* Mobil cihazlar için genişlik ayarı */
         height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-        margin-right: -5px;
+        margin-right: 10px;
+        bottom: 5;
    
     }
     
