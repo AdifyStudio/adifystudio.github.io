@@ -57,7 +57,7 @@
     }
 
     #banner-div {
-        width: 40%; /* Mobil cihazlar için genişlik ayarı */
+        width: 50%; /* Mobil cihazlar için genişlik ayarı */
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
     }
 
@@ -72,7 +72,7 @@
     #icon-div img {
         max-width: 13px; /* Mobil cihazlar için genişlik ayarı */
         max-height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-        margin-bottom: 1px; /* Mobil cihazlar için alt boşluk ayarı */
+        margin-bottom: 1.5px; /* Mobil cihazlar için alt boşluk ayarı */
 
     }
 }
