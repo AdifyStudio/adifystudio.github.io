@@ -30,8 +30,8 @@
 }
 
 #icon-div img {
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 100%;
+    max-height: auto;
     margin-left: 6px;
     margin-top: auto;
     transition: transform 0.3s ease;
@@ -44,7 +44,9 @@
 /* Mobil Uyum */
 @media screen and (max-width: 768px) {
     #ust-div {
-        display: none; /* Mobilde üst div gözükmesin */
+        width: 100%; /* Banner div 100% genişlikte */
+        height: auto; /* Orantılı yükseklik */
+        border-radius: 0; /* Köşeleri kare yap */
     }
 
     #icon-div {
