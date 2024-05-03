@@ -1,3 +1,4 @@
+/* Genel Stil */
 #ust-div {
     width: 1000px;
     background-color: black;
@@ -43,31 +44,20 @@
 /* Mobil Uyum */
 @media screen and (max-width: 768px) {
     #ust-div {
-        width: 100%; 
-        height: 30px;
-    }
-
-    #banner-div {
-        width: 80%; /* Mobilde banner divinin genişliği %80 olacak */
-        height: 80%; /* Mobilde banner divinin yüksekliği %80 olacak */
-        left: 0;
-        transform: none;
+        display: none; /* Mobilde üst div gözükmesin */
     }
 
     #icon-div {
-        width: 80%; /* Mobilde icon divinin genişliği %80 olacak */
-        height: 80%; /* Mobilde icon divinin yüksekliği %80 olacak */
-        padding: 0 20px;
-        bottom: 0;
-        right: 0;
-        transform: none;
-        justify-content: flex-start;
+        display: none; /* Mobilde icon div gözükmesin */
     }
 
     #icon-div img {
-        max-width: 20px;
-        max-height: 20px;
-        margin-left: 6px;
-        margin-top: auto;
+        display: none; /* Mobilde icondiv img gözükmesin */
+    }
+
+    #banner-div {
+        width: 100%; /* Banner div 100% genişlikte */
+        height: auto; /* Orantılı yükseklik */
+        border-radius: 0; /* Köşeleri kare yap */
     }
 }
