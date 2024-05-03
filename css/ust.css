@@ -15,24 +15,22 @@
     border-radius: 10px;
     width: 200px;
 }
+
 #banner-div img {
-  
     position: absolute;
     bottom: 0;
     left: 0;
-
-   
 }
 
 #icon-div {
-    background-color: rgb(140, 22, 236);
+   
     position: absolute;
     bottom: 0;
     right: 0;
     width: 200px;
     height: 60px;
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* Resimlerin alt tarafa yapışması */
     justify-content: flex-end;
     margin-right: 15px;
 }
@@ -41,7 +39,7 @@
     max-width: 25px;
     max-height: 25px;
     margin-left: 6px;
-    margin-top: auto;
+    margin-bottom: 2px; /* Resimlerin alt boşluk ayarı */
     transition: transform 0.3s ease;
 }
 
@@ -56,51 +54,22 @@
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
         margin: 5px auto;
     }
-}
 
-/* Mobil Uyum */
-@media screen and (max-width: 768px) {
     #banner-div {
         width: 40%; /* Mobil cihazlar için genişlik ayarı */
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
-   
     }
-}
 
-/* Mobil Uyum */
-@media screen and (max-width: 768px) {
-    #banner-div {
-        width: 50%; /* Mobil cihazlar için genişlik ayarı */
-        height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
-   
-    }
-    
-
-  
-}
-/* Mobil Uyum */
-@media screen and (max-width: 768px) {
     #icon-div {
         width: 50%; /* Mobil cihazlar için genişlik ayarı */
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
         margin-right: -5px;
         border-radius: 10px;
-   
     }
-    
 
-  
-}
-/* Mobil Uyum */
-@media screen and (max-width: 768px) {
     #icon-div img {
-        width: 12px; /* Mobil cihazlar için genişlik ayarı */
-        height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-        margin-right: 4px;
-        bottom: 5;
-   
+        max-width: 13px; /* Mobil cihazlar için genişlik ayarı */
+        max-height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
+        margin-bottom: 1px; /* Mobil cihazlar için alt boşluk ayarı */
     }
-    
-
-  
 }
