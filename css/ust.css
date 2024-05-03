@@ -90,3 +90,15 @@
 
   
 }
+/* Mobil Uyum */
+@media screen and (max-width: 768px) {
+    #icon-div img {
+        width: 10px; /* Mobil cihazlar için genişlik ayarı */
+        height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
+        margin-right: -5px;
+   
+    }
+    
+
+  
+}
