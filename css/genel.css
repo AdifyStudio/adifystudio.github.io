@@ -1,0 +1,15 @@
+/* 2. kod */
+/* Genel stiller */
+body {
+    background-image: url('../images/genel/dj.png');
+    /* Diğer stillendirme kodları */
+
+    /* Mobil cihazlar için */
+    @media screen and (max-width: 600px) {
+        /* Resimlerin maksimum genişliklerini ayarlayalım */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+/* 5. kod */
+#slider {
+    width: 1000px; /* Slider genişliği */
+    height: 200px; /* Slider yüksekliği */
+    margin: 5px auto; /* Sayfanın ortasında olacak şekilde otomatik kenar boşluğu */
+    position: relative; /* Konumlandırmak için */
+    overflow: hidden; /* Taşan içeriği gizler */
+    display: flex; /* Öğeleri yatay olarak düzenler */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    border-radius: 10px; /* Slider köşelerini yuvarlat */
+
+    /* Mobil cihazlar için */
+    @media (max-width: 768px) {
+        width: 90%; /* Mobil cihazlar için genişlik ayarı */
+        height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
+    }
+}
+
+#slider img {
+    width: 100%; /* Resimlerin genişliği slider'a göre ayarlanacak */
+    height: 100%; /* Yükseklik otomatik olarak ayarlanacak */
+    position: absolute; /* Resimlerin konumunu ayarlar */
+    top: 0; /* Slider içinde üstten hizalanacak */
+    left: 0; /* Slider içinde soldan hizalanacak */
+    opacity: 0; /* Resimler gizlenmiş olacak */
+    transition: opacity 0.5s; /* Geçiş efekti süresi */
+    border-radius: 10px; /* Resim köşelerini yuvarlat */
+
+    /* Mobil cihazlar için */
+    @media (max-width: 768px) {
+        border-radius: 0; /* Mobil cihazlar için köşeleri sıfırla */
+    }
+}
+
+#slider img.active {
+    opacity: 1; /* Aktif resim görünür olacak */
+}
+
+.slider-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.prev-btn {
+    left: 10px;
+    bottom: 50%; /* Dikeyde ortala */
+    transform: translateY(50%); /* Dikeyde ortala */
+}
+
+.next-btn {
+    right: 10px;
+    bottom: 50%; /* Dikeyde ortala */
+    transform: translateY(50%); /* Dikeyde ortala */
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Resimlerin üzerinde */
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: white;
+}

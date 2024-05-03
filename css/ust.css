@@ -1,0 +1,80 @@
+#ust-div {
+    width: 1000px;
+    background-color: black;
+    height: 80px;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#banner-div {
+    background-color: rgb(140, 22, 236);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 200px;
+}
+
+#icon-div {
+    background-color: rgb(140, 22, 236);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+#icon-div img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-left: 6px;
+    margin-top: auto;
+    transition: transform 0.3s ease;
+}
+
+#icon-div img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobil Uyum */
+@media screen and (max-width: 768px) {
+    #ust-div {
+        width: 100%; 
+        height: 30px;
+    }
+}
+
+/* Mobil Uyum */
+@media screen and (max-width: 768px) {
+    #banner-div {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+}
+
+/* Mobil Uyum */
+@media screen and (max-width: 768px) {
+    #icon-div {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding: 0 20px;
+        bottom: 0;
+        right: 0;
+        transform: none;
+        justify-content: flex-start;
+    }
+
+    #icon-div img {
+        max-width: 20px;
+        max-height: 20px;
+        margin-left: 6px;
+        margin-top: auto;
+    }
+}
