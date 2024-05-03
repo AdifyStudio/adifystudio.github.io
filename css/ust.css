@@ -15,6 +15,14 @@
     border-radius: 10px;
     width: 200px;
 }
+#banner-div img {
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+   
+}
 
 #icon-div {
     background-color: rgb(140, 22, 236);
@@ -53,7 +61,7 @@
 /* Mobil Uyum */
 @media screen and (max-width: 768px) {
     #banner-div {
-        width: 50%; /* Mobil cihazlar için genişlik ayarı */
+        width: 40%; /* Mobil cihazlar için genişlik ayarı */
         height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
    
     }
@@ -61,11 +69,11 @@
 
 /* Mobil Uyum */
 @media screen and (max-width: 768px) {
-    #icon-div {
-        display: none; /* Mobilde bannerı kaldır */
+    #banner-div {
+        width: 50%; /* Mobil cihazlar için genişlik ayarı */
+        height: 50px; /* Mobil cihazlar için yükseklik otomatik ayarı */
+   
     }
 
-    #icon-div img {
-        display: none; /* Mobilde bannerı kaldır */
-    }
+  
 }
