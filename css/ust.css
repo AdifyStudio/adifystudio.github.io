@@ -73,7 +73,7 @@
     #icon-div img {
         max-width: 13px; /* Mobil cihazlar için genişlik ayarı */
         max-height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-        margin-bottom: 1.5px; /* Mobil cihazlar için alt boşluk ayarı */
+        margin-bottom: 0.5px; /* Mobil cihazlar için alt boşluk ayarı */
 
     }
 }
