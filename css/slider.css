@@ -1,4 +1,3 @@
-/* 5. kod */
 #slider {
     width: 1000px; /* Slider genişliği */
     height: 200px; /* Slider yüksekliği */
@@ -29,7 +28,8 @@
 
     /* Mobil cihazlar için */
     @media (max-width: 768px) {
-        border-radius: 0; /* Mobil cihazlar için köşeleri sıfırla */
+        width: 90%; /* Mobil cihazlar için genişlik ayarı */
+        height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
     }
 }
 
