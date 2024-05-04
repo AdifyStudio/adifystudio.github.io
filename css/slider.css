@@ -8,12 +8,6 @@
     justify-content: center; /* Yatayda ortala */
     align-items: center; /* Dikeyde ortala */
     border-radius: 10px; /* Slider köşelerini yuvarlat */
-
-    /* Mobil cihazlar için */
-    @media (max-width: 768px) {
-        width: 90%; /* Mobil cihazlar için genişlik ayarı */
-        height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-    }
 }
 
 #slider img {
@@ -25,12 +19,6 @@
     opacity: 0; /* Resimler gizlenmiş olacak */
     transition: opacity 0.5s; /* Geçiş efekti süresi */
     border-radius: 10px; /* Resim köşelerini yuvarlat */
-
-    /* Mobil cihazlar için */
-    @media (max-width: 768px) {
-        width: 90%; /* Mobil cihazlar için genişlik ayarı */
-        height: auto; /* Mobil cihazlar için yükseklik otomatik ayarı */
-    }
 }
 
 #slider img.active {
