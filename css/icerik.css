@@ -22,3 +22,34 @@
     height: 100%;
 }
 
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.description {
+    text-align: center;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
